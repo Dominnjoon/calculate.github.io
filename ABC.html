@@ -1,0 +1,106 @@
+ø<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+             font-size: 50px;
+        }
+        input{
+            height: 50px;
+        }
+        h2 input{
+            height: 50px;
+            width: 100px;
+
+         
+        }
+        h2{
+         margin-left:550px;        
+        }
+    </style>
+</head>
+<body >
+
+   
+   <div id="full">
+    <h1>Welcome to Website  គិតលេខ
+        <br>
+       
+   Num1: <input type="text" value=""  id="num1">
+   Num2: <input type="text" value="" id="num2">
+
+   Resullf:  <input type="text" value="" id="resulf">
+   <br>
+ <h2>
+   <input type="button" value="+" onclick="bok()">
+   <input type="button" value="-" onclick="dok()">
+    <input type="button" value="*"  onclick="kun()">
+    <input type="button" value="/"  onclick="jeak()">
+</h2>
+</h1>
+</div>
+  <input type="button" value="click for change color"  onclick="ch_color()">
+  
+  <input type="button" value="clcik for massage" onclick="massage()">
+  <input type="button" value="click for hit" onclick="hit()">
+   <input type="button" value="click for show"  onclick="show()">
+   <input type="button" value="discount" onclick="discunt()">
+</body>                                   
+<script>
+   
+    function bok(){
+        let num1=document.getElementById("num1")
+        let num2 =document.getElementById("num2")
+        let res = (Number(num1.value))+(Number(num2.value))
+    document.getElementById("resulf").value=res;
+}
+  function dok(){
+    let num1=document.getElementById("num1")
+    let num2=document.getElementById("num2")
+     let res=(Number(num1.value))-(Number(num2.value))
+     document.getElementById("resulf").value=res;
+    
+  }
+   function kun(){
+    let num1=document.getElementById("num1")
+    let num2=document.getElementById("num2")
+    let res =(Number(num1.value))*(Number(num2.value))
+    document.getElementById("resulf").value=res;
+   }
+   function jeak(){
+    let num1=document.getElementById("num1")
+    let num2=document.getElementById("num2")
+    let res = (Number(num1.value))/(Number(num2.value))
+    document.getElementById("resulf").value=res;
+   }
+     
+
+   function discunt(){
+    let num1=document.getElementById("num1")
+    let num2=document.getElementById("num2")
+    let num3=document.getElementById("num3")
+   
+    let res=(Number(num1.value))*(Number(num2.value))/(Number(num3.value))
+   
+    document.getElementById("resulf").value=res;
+   }
+
+   function ch_color(){   
+    document.getElementById("full").style.color="red";
+   }
+function massage(){
+    alert("Thans you guy for  support");
+}
+function hit(){
+    document.getElementById("full").style.display="none"
+}
+function show(){
+    document.getElementById("full").style.display="block"
+}
+
+</script>
+</html>
